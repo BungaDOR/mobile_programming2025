@@ -7,6 +7,7 @@ class quiz_1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color.fromARGB(255, 222, 221, 221),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
         child: Column(
@@ -131,7 +132,7 @@ class quiz_1 extends StatelessWidget {
                             ),
                       ),
                     ),
-                    
+                    SizedBox(width: 20,),
                     Expanded(
                       child: Container(
                         height: 100,
