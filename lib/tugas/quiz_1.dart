@@ -7,7 +7,7 @@ class quiz_1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 222, 221, 221),
+      backgroundColor: const Color.fromARGB(255, 238, 237, 237),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
         child: Column(
@@ -35,7 +35,8 @@ class quiz_1 extends StatelessWidget {
                          const Color.fromARGB(255, 211, 159, 239),
                       ],),
                     borderRadius: BorderRadius.only(
-                      topRight: Radius.circular(90))
+                      topRight: Radius.circular(95), bottomRight: Radius.circular(15),
+                      topLeft: Radius.circular(15), bottomLeft: Radius.circular(15)),
                   ),
                   padding: EdgeInsets.symmetric(horizontal: 20,vertical: 20),
                   child: Column(
@@ -51,13 +52,13 @@ class quiz_1 extends StatelessWidget {
                           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20,
                           color: Colors.white),),
 
-                          SizedBox(height: 30,),
+                          SizedBox(height: 20,),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text("60 min",
-                              style: TextStyle(color: Colors.white),),
-                              
+                              style: TextStyle(color: Colors.white),
+                              ),
                               Container(
                                 width: 40, height: 40,
                                 decoration: BoxDecoration(
@@ -114,7 +115,6 @@ class quiz_1 extends StatelessWidget {
                 Text("Area of Focus",
                 style: TextStyle(fontWeight: FontWeight.bold),),
                 SizedBox(height: 10,),
-                // padding: EdgeInsets.symmetric(horizontal: 20,vertical: 20),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
