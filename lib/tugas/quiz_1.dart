@@ -112,33 +112,41 @@ class quiz_1 extends StatelessWidget {
                 SizedBox(height: 10,),
                 Text("Area of Focus",
                 style: TextStyle(fontWeight: FontWeight.bold),),
-                //padding: EdgeInsets.symmetric(horizontal: 20,vertical: 20),
+                SizedBox(height: 10,),
+                // padding: EdgeInsets.symmetric(horizontal: 20,vertical: 20),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Container(
-                      width: 200, height: 100,
-                      padding: EdgeInsets.all(10),
-                      decoration: BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage("gambar/ex3.png"),
-                          fit: BoxFit.contain
-                          ),
-                          borderRadius: BorderRadius.circular(20)
-                          ),
-                    ),
-                    Container(
-                      width: 200, height: 100,
-                      padding: EdgeInsets.all(10),
-                      decoration: BoxDecoration(
-                        image: DecorationImage(image: AssetImage("gambar/ex4.png"),
-                        fit: BoxFit.contain
-                        ),
-                        borderRadius: BorderRadius.circular(20)
+                    Expanded(
+                      child: Container(
+                        height: 100,
+                        padding: EdgeInsets.all(10),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color: Colors.white,
+                          image: DecorationImage(
+                            image: AssetImage("gambar/ex3.png"),
+                            fit: BoxFit.contain
+                            ),
+                            ),
                       ),
-                    )
+                    ),
+                    
+                    Expanded(
+                      child: Container(
+                        height: 100,
+                        padding: EdgeInsets.all(10),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color: Colors.white,
+                          image: DecorationImage(image: AssetImage("gambar/ex4.png"),
+                          fit: BoxFit.contain,
+                          ),
+                        ),
+                      ),
+                    ),
                   ],
-                )
+                ),
               ],
       ),),
     );
