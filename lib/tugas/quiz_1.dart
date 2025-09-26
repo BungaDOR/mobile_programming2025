@@ -71,18 +71,18 @@ class quiz_1 extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 20,),
-                Container(
-                  decoration: BoxDecoration(color: const Color.fromARGB(255, 158, 24, 24),
-                  borderRadius: BorderRadius.all(Radius.circular(10))),
-                ),
                 Stack(
                   children: [
-                    Align(
-                      alignment: Alignment(0, 0.5),
-                      child: Container(
-                        decoration: BoxDecoration(image: DecorationImage(image: image)),
+                      Container(
+                        width: 200, height: 200,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage("gambar/card.jpg"),
+                            fit: BoxFit.cover
+                            ),
+                            borderRadius: BorderRadius.circular(10),
+                            ),
                       ),
-                    )
                   ],
                 )
               ],
