@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class Quiz1 extends StatelessWidget {
-  const Quiz1({super.key});
+class quiz_1 extends StatelessWidget {
+  const quiz_1({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -51,7 +51,7 @@ class Quiz1 extends StatelessWidget {
 
                           SizedBox(height: 30,),
                           Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text("60 min",
                               style: TextStyle(color: Colors.white),),
@@ -62,6 +62,7 @@ class Quiz1 extends StatelessWidget {
                                   borderRadius: BorderRadius.all(Radius.circular(35)),
                                   color: Colors.white,
                                 ),
+                                child: Icon(Icons.play_arrow, color: Colors.purple,),
                               ),
                             ],
                           ),                

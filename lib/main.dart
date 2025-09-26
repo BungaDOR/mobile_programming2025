@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
       //   "/halaman2" :(context)=>Pages2()
       // },
       // initialRoute: "/",
-      home: Quiz1()
+      home: quiz_1()
     );
   }
 }
