@@ -86,7 +86,24 @@ class quiz_1 extends StatelessWidget {
                             child: Row(
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
-                                SizedBox(width: 50,)
+                                SizedBox(width: 200,),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Text("You are doing great",
+                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15,
+                                    color: Colors.blue),
+                                    ),
+                                    Text("Keep it up",
+                                    style: TextStyle(fontSize: 13, color: Colors.grey),
+                                    ),
+                                    Text("stick to your plan",
+                                    style: TextStyle(fontSize: 13, color: Colors.grey),),
+                                  ],
+                                ),
+                                Positioned(top: 0, left: 0,
+                                child: Image.asset("gambar/figure1.png", height: 30,),)
                               ],
                             ),
                       ),
