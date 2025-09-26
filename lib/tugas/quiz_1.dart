@@ -102,11 +102,19 @@ class quiz_1 extends StatelessWidget {
                                     style: TextStyle(fontSize: 13, color: Colors.grey),),
                                   ],
                                 ),
-                                Positioned(top: 0, left: 0,
-                                child: Image.asset("gambar/figure1.png", height: 30,),)
                               ],
                             ),
                       ),
+                      Positioned(left: 10, top: 0,
+                        child: Image.asset("gambar/figure1.png", height: 90,),),
+                  ],
+                ),
+                SizedBox(height: 10,),
+                Text("Area of Focus",
+                style: TextStyle(fontWeight: FontWeight.bold),),
+                Row(
+                  children: [
+                    Container()
                   ],
                 )
               ],
