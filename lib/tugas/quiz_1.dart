@@ -14,16 +14,17 @@ class quiz_1 extends StatelessWidget {
               children: [
                 Text("Training",
                 style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),),
-                SizedBox(height: 20,),
+                SizedBox(height: 20),
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(" Your Program",
                   style: TextStyle(fontSize: 25,fontWeight: FontWeight.normal),),
-                  Padding(padding: EdgeInsetsGeometry.all(90)),
                   Text("Details >",
                   style: TextStyle(color: Colors.blue),),
                 ],
               ),
+              SizedBox(height: 15,),
                 Container(
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
@@ -69,7 +70,21 @@ class quiz_1 extends StatelessWidget {
                     ],
                   ),
                 ),
-              
+                SizedBox(height: 20,),
+                Container(
+                  decoration: BoxDecoration(color: const Color.fromARGB(255, 158, 24, 24),
+                  borderRadius: BorderRadius.all(Radius.circular(10))),
+                ),
+                Stack(
+                  children: [
+                    Align(
+                      alignment: Alignment(0, 0.5),
+                      child: Container(
+                        decoration: BoxDecoration(image: DecorationImage(image: image)),
+                      ),
+                    )
+                  ],
+                )
               ],
       ),),
     );
