@@ -112,9 +112,31 @@ class quiz_1 extends StatelessWidget {
                 SizedBox(height: 10,),
                 Text("Area of Focus",
                 style: TextStyle(fontWeight: FontWeight.bold),),
+                //padding: EdgeInsets.symmetric(horizontal: 20,vertical: 20),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Container()
+                    Container(
+                      width: 200, height: 100,
+                      padding: EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage("gambar/ex3.png"),
+                          fit: BoxFit.contain
+                          ),
+                          borderRadius: BorderRadius.circular(20)
+                          ),
+                    ),
+                    Container(
+                      width: 200, height: 100,
+                      padding: EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        image: DecorationImage(image: AssetImage("gambar/ex4.png"),
+                        fit: BoxFit.contain
+                        ),
+                        borderRadius: BorderRadius.circular(20)
+                      ),
+                    )
                   ],
                 )
               ],
@@ -122,3 +144,11 @@ class quiz_1 extends StatelessWidget {
     );
   }
 }
+// width: 500, height: 120,
+//                         padding: EdgeInsets.all(10),
+//                         decoration: BoxDecoration(
+//                           image: DecorationImage(
+//                             image: AssetImage("gambar/card.jpg"),
+//                             fit: BoxFit.cover
+//                             ),
+//                             borderRadius: BorderRadius.circular(20),
