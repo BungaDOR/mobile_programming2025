@@ -62,7 +62,6 @@ class Quiz1 extends StatelessWidget {
                                   borderRadius: BorderRadius.all(Radius.circular(35)),
                                   color: Colors.white,
                                 ),
-                                
                               ),
                             ],
                           ),                
