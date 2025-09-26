@@ -74,14 +74,16 @@ class quiz_1 extends StatelessWidget {
                 Stack(
                   children: [
                       Container(
-                        width: 200, height: 200,
+                        padding: EdgeInsets.all(10),
                         decoration: BoxDecoration(
                           image: DecorationImage(
                             image: AssetImage("gambar/card.jpg"),
-                            fit: BoxFit.cover
+                            //fit: BoxFit.cover
                             ),
                             borderRadius: BorderRadius.circular(10),
                             ),
+                            child: Text("You are doing great",
+                            style: TextStyle(color: Colors.blue, fontSize: 25),),
                       ),
                   ],
                 )
