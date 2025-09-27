@@ -14,7 +14,6 @@ class quiz_1 extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
-                  //width: double.infinity,
                   color: Colors.transparent,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -178,11 +177,3 @@ class quiz_1 extends StatelessWidget {
     );
   }
 }
-// width: 500, height: 120,
-//                         padding: EdgeInsets.all(10),
-//                         decoration: BoxDecoration(
-//                           image: DecorationImage(
-//                             image: AssetImage("gambar/card.jpg"),
-//                             fit: BoxFit.cover
-//                             ),
-//                             borderRadius: BorderRadius.circular(20),
