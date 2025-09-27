@@ -56,8 +56,14 @@ class quiz_1 extends StatelessWidget {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text("60 min",
+                              Container(
+                                width: 10, height: 10,
+                                color: Colors.white,
+                                child: 
+                                Icon(Icons.alarm, color: Colors.white,),
+                               Text("60 min",
                               style: TextStyle(color: Colors.white),
+                              ),
                               ),
                               Container(
                                 width: 40, height: 40,
