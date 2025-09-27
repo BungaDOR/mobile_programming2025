@@ -11,16 +11,22 @@ class quiz_1 extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
         child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Container(
-                  width: double.infinity,
+                  //width: double.infinity,
                   color: Colors.transparent,
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text("Training",
                       style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),),
-                      Icon(Icons.date_range, size: 15,),
+                      Stack(
+                        children: [
+                          Text("<", style: TextStyle(fontWeight: FontWeight.bold),),
+                          Icon(Icons.date_range, size: 15,),
+                          Text(">", style: TextStyle(fontWeight: FontWeight.bold),),
+                        ],
+                      ),
                     ],
                   ),
                 ),
